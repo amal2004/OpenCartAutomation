@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\amalw\AppData\Local\Temp\testng-eclipse--940405687\testng-customsuite.xml</span>
+                    <span>C:\Users\amalw\AppData\Local\Temp\testng-eclipse--1391038667\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 3 failed,   7 passed</span>
+                    <span class="method-stats">13 methods, 3 failed,   10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,17 +102,17 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="opencart.testcases.ApplicationTest" class="method navigator-link" hash-for-method="addProductToCart(-45)">addProductToCart(-45)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="opencart.testcases.ApplicationTest" class="method navigator-link" hash-for-method="addProductToCart()">addProductToCart()</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="opencart.testcases.ApplicationTest" class="method navigator-link" hash-for-method="addProductToCart(Abc)">addProductToCart(Abc)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="opencart.testcases.ApplicationTest" class="method navigator-link" hash-for-method="addProductToCart(-45)">addProductToCart(-45)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -124,6 +124,11 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="opencart.testcases.ApplicationTest" class="method navigator-link" hash-for-method="acceptTerms">acceptTerms</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="opencart.testcases.ApplicationTest" class="method navigator-link" hash-for-method="addProductToCart(1)">addProductToCart(1)</a> <!-- method navigator-link -->
@@ -142,6 +147,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="opencart.testcases.ApplicationTest" class="method navigator-link" hash-for-method="enterAddress(, , , , , , )">enterAddress(, , , , , , )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="opencart.testcases.ApplicationTest" class="method navigator-link" hash-for-method="enterDeliveryDetails">enterDeliveryDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="opencart.testcases.ApplicationTest" class="method navigator-link" hash-for-method="enterDeliveryMethod">enterDeliveryMethod</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -179,49 +194,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addProductToCart(-45)">
-                  </a> <!-- addProductToCart(-45) -->
-                  <span class="method-name">addProductToCart</span>
-                  <span class="parameters">(-45)</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Qty must be Positive] but found [Success: You have added HP LP3065 to your shopping cart!]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at opencart.testcases.ApplicationTest.addProductToCart(ApplicationTest.java:123)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="addProductToCart()">
                   </a> <!-- addProductToCart() -->
                   <span class="method-name">addProductToCart</span>
@@ -233,7 +205,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:453)
 	at org.testng.Assert.assertEquals(Assert.java:463)
-	at opencart.testcases.ApplicationTest.addProductToCart(ApplicationTest.java:123)
+	at opencart.testcases.ApplicationTest.addProductToCart(ApplicationTest.java:121)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -276,7 +248,50 @@
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:453)
 	at org.testng.Assert.assertEquals(Assert.java:463)
-	at opencart.testcases.ApplicationTest.addProductToCart(ApplicationTest.java:123)
+	at opencart.testcases.ApplicationTest.addProductToCart(ApplicationTest.java:121)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProductToCart(-45)">
+                  </a> <!-- addProductToCart(-45) -->
+                  <span class="method-name">addProductToCart</span>
+                  <span class="parameters">(-45)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Qty must be Positive] but found [Success: You have added HP LP3065 to your shopping cart!]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at opencart.testcases.ApplicationTest.addProductToCart(ApplicationTest.java:121)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -316,6 +331,13 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="acceptTerms">
+                  </a> <!-- acceptTerms -->
+                  <span class="method-name">acceptTerms</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="addProductToCart(1)">
                   </a> <!-- addProductToCart(1) -->
                   <span class="method-name">addProductToCart</span>
@@ -347,6 +369,20 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="enterDeliveryDetails">
+                  </a> <!-- enterDeliveryDetails -->
+                  <span class="method-name">enterDeliveryDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterDeliveryMethod">
+                  </a> <!-- enterDeliveryMethod -->
+                  <span class="method-name">enterDeliveryMethod</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="launchBrowserTest">
                   </a> <!-- launchBrowserTest -->
                   <span class="method-name">launchBrowserTest</span>
@@ -371,7 +407,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\amalw\AppData\Local\Temp\testng-eclipse--940405687\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\amalw\AppData\Local\Temp\testng-eclipse--1391038667\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -420,52 +456,64 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(13);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'enterAddress')
 data.setCell(0, 2, 'opencart.testcases.ApplicationTest')
-data.setCell(0, 3, 10967);
+data.setCell(0, 3, 11089);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'enterAddress')
 data.setCell(1, 2, 'opencart.testcases.ApplicationTest')
-data.setCell(1, 3, 10099);
+data.setCell(1, 3, 10340);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'proceedToCheckout')
+data.setCell(2, 1, 'acceptTerms')
 data.setCell(2, 2, 'opencart.testcases.ApplicationTest')
-data.setCell(2, 3, 3971);
+data.setCell(2, 3, 5237);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'addProductToCart')
+data.setCell(3, 1, 'proceedToCheckout')
 data.setCell(3, 2, 'opencart.testcases.ApplicationTest')
-data.setCell(3, 3, 3552);
+data.setCell(3, 3, 4005);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'addProductToCart')
 data.setCell(4, 2, 'opencart.testcases.ApplicationTest')
-data.setCell(4, 3, 3323);
+data.setCell(4, 3, 3915);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'addProductToCart')
 data.setCell(5, 2, 'opencart.testcases.ApplicationTest')
-data.setCell(5, 3, 3243);
+data.setCell(5, 3, 3462);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'addProductToCart')
 data.setCell(6, 2, 'opencart.testcases.ApplicationTest')
-data.setCell(6, 3, 3236);
+data.setCell(6, 3, 3376);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'browseProduct')
+data.setCell(7, 1, 'addProductToCart')
 data.setCell(7, 2, 'opencart.testcases.ApplicationTest')
-data.setCell(7, 3, 2074);
+data.setCell(7, 3, 3324);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'login')
+data.setCell(8, 1, 'enterDeliveryDetails')
 data.setCell(8, 2, 'opencart.testcases.ApplicationTest')
-data.setCell(8, 3, 1926);
+data.setCell(8, 3, 3147);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'launchBrowserTest')
+data.setCell(9, 1, 'enterDeliveryMethod')
 data.setCell(9, 2, 'opencart.testcases.ApplicationTest')
-data.setCell(9, 3, 235);
+data.setCell(9, 3, 3089);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'browseProduct')
+data.setCell(10, 2, 'opencart.testcases.ApplicationTest')
+data.setCell(10, 3, 2614);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'login')
+data.setCell(11, 2, 'opencart.testcases.ApplicationTest')
+data.setCell(11, 3, 2389);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'launchBrowserTest')
+data.setCell(12, 2, 'opencart.testcases.ApplicationTest')
+data.setCell(12, 3, 429);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 42 seconds</span>
+              <span class="suite-total-time">Total running time: 56 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -498,93 +546,117 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void opencart.testcases.ApplicationTest.launchBrowserTest())</span>
-                <span class="method-start">6201 ms</span>
+                <span class="method-start">7767 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">launchBrowserTest</span>
-                <span class="method-start">6205 ms</span>
+                <span class="method-start">7776 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void opencart.testcases.ApplicationTest.login())</span>
-                <span class="method-start">6443 ms</span>
+                <span class="method-start">8210 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">6443 ms</span>
+                <span class="method-start">8211 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void opencart.testcases.ApplicationTest.browseProduct() throws java.lang.InterruptedException)</span>
-                <span class="method-start">8371 ms</span>
+                <span class="method-start">10602 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">browseProduct</span>
-                <span class="method-start">8371 ms</span>
+                <span class="method-start">10602 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void opencart.testcases.ApplicationTest.addProductToCart(java.lang.String) throws java.lang.I...)</span>
-                <span class="method-start">11935 ms</span>
+                <span class="method-start">14854 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">addProductToCart()</span>
-                <span class="method-start">11935 ms</span>
+                <span class="method-start">14854 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void opencart.testcases.ApplicationTest.addProductToCart(java.lang.String) throws java.lang.I...)</span>
-                <span class="method-start">15261 ms</span>
+                <span class="method-start">18771 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">addProductToCart(Abc)</span>
-                <span class="method-start">15261 ms</span>
+                <span class="method-start">18771 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void opencart.testcases.ApplicationTest.addProductToCart(java.lang.String) throws java.lang.I...)</span>
-                <span class="method-start">18506 ms</span>
+                <span class="method-start">22148 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">addProductToCart(-45)</span>
-                <span class="method-start">18507 ms</span>
+                <span class="method-start">22148 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void opencart.testcases.ApplicationTest.addProductToCart(java.lang.String) throws java.lang.I...)</span>
-                <span class="method-start">22060 ms</span>
+                <span class="method-start">25473 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addProductToCart(1)</span>
-                <span class="method-start">22061 ms</span>
+                <span class="method-start">25473 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void opencart.testcases.ApplicationTest.proceedToCheckout() throws java.lang.InterruptedExcep...)</span>
-                <span class="method-start">25297 ms</span>
+                <span class="method-start">28935 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">proceedToCheckout</span>
-                <span class="method-start">25298 ms</span>
+                <span class="method-start">28936 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void opencart.testcases.ApplicationTest.enterAddress(java.lang.String,java.lang.String,java.l...)</span>
-                <span class="method-start">29377 ms</span>
+                <span class="method-start">33090 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">enterAddress(, , , , , , )</span>
-                <span class="method-start">29377 ms</span>
+                <span class="method-start">33091 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void opencart.testcases.ApplicationTest.enterAddress(java.lang.String,java.lang.String,java.l...)</span>
-                <span class="method-start">39478 ms</span>
+                <span class="method-start">43433 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">enterAddress(Vivek, Ingole, Hinjewadi Phase 3, Pune, 413309, 107, 19)</span>
-                <span class="method-start">39478 ms</span>
+                <span class="method-start">43433 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void opencart.testcases.ApplicationTest.enterDeliveryDetails() throws java.lang.InterruptedEx...)</span>
+                <span class="method-start">54523 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">enterDeliveryDetails</span>
+                <span class="method-start">54523 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void opencart.testcases.ApplicationTest.enterDeliveryMethod() throws java.lang.InterruptedExc...)</span>
+                <span class="method-start">57671 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">enterDeliveryMethod</span>
+                <span class="method-start">57671 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void opencart.testcases.ApplicationTest.acceptTerms() throws java.lang.InterruptedException)</span>
+                <span class="method-start">60761 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">acceptTerms</span>
+                <span class="method-start">60761 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closerBrowser</span>
-                <span class="method-start">50447 ms</span>
+                <span class="method-start">65998 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

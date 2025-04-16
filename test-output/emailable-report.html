@@ -9,18 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">7</td><td class="num">0</td><td class="num attn">3</td><td class="num">50,851</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">10</td><td class="num">0</td><td class="num attn">3</td><td class="num">66,495</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">opencart.testcases.ApplicationTest</td><td><a href="#m0">addProductToCart</a></td><td rowspan="3">1744814125460</td><td rowspan="3">3552</td></tr><tr class="failedeven"><td><a href="#m1">addProductToCart</a></td></tr><tr class="failedeven"><td><a href="#m2">addProductToCart</a></td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">opencart.testcases.ApplicationTest</td><td><a href="#m3">addProductToCart</a></td><td rowspan="1">1744814129014</td><td rowspan="1">3236</td></tr><tr class="passedeven"><td><a href="#m4">browseProduct</a></td><td rowspan="1">1744814115324</td><td rowspan="1">2074</td></tr><tr class="passedeven"><td><a href="#m5">enterAddress</a></td><td rowspan="2">1744814146431</td><td rowspan="2">10967</td></tr><tr class="passedeven"><td><a href="#m6">enterAddress</a></td></tr><tr class="passedeven"><td><a href="#m7">launchBrowserTest</a></td><td rowspan="1">1744814113158</td><td rowspan="1">235</td></tr><tr class="passedeven"><td><a href="#m8">login</a></td><td rowspan="1">1744814113396</td><td rowspan="1">1926</td></tr><tr class="passedeven"><td><a href="#m9">proceedToCheckout</a></td><td rowspan="1">1744814132251</td><td rowspan="1">3971</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">opencart.testcases.ApplicationTest</td><td><a href="#m0">addProductToCart</a></td><td rowspan="3">1744824131951</td><td rowspan="3">3915</td></tr><tr class="failedeven"><td><a href="#m1">addProductToCart</a></td></tr><tr class="failedeven"><td><a href="#m2">addProductToCart</a></td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="10">opencart.testcases.ApplicationTest</td><td><a href="#m3">acceptTerms</a></td><td rowspan="1">1744824177858</td><td rowspan="1">5237</td></tr><tr class="passedeven"><td><a href="#m4">addProductToCart</a></td><td rowspan="1">1744824142570</td><td rowspan="1">3462</td></tr><tr class="passedeven"><td><a href="#m5">browseProduct</a></td><td rowspan="1">1744824127699</td><td rowspan="1">2614</td></tr><tr class="passedeven"><td><a href="#m6">enterAddress</a></td><td rowspan="2">1744824160530</td><td rowspan="2">11089</td></tr><tr class="passedeven"><td><a href="#m7">enterAddress</a></td></tr><tr class="passedeven"><td><a href="#m8">enterDeliveryDetails</a></td><td rowspan="1">1744824171620</td><td rowspan="1">3147</td></tr><tr class="passedeven"><td><a href="#m9">enterDeliveryMethod</a></td><td rowspan="1">1744824174768</td><td rowspan="1">3089</td></tr><tr class="passedeven"><td><a href="#m10">launchBrowserTest</a></td><td rowspan="1">1744824124873</td><td rowspan="1">429</td></tr><tr class="passedeven"><td><a href="#m11">login</a></td><td rowspan="1">1744824125308</td><td rowspan="1">2389</td></tr><tr class="passedeven"><td><a href="#m12">proceedToCheckout</a></td><td rowspan="1">1744824146033</td><td rowspan="1">4005</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">opencart.testcases.ApplicationTest#addProductToCart</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>-45</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Qty must be Positive] but found [Success: You have added HP LP3065 to your shopping cart!]
+<h2>Default test</h2><h3 id="m0">opencart.testcases.ApplicationTest#addProductToCart</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Qty field is mandatory] but found [Success: You have added HP LP3065 to your shopping cart!]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:453)
 	at org.testng.Assert.assertEquals(Assert.java:463)
-	at opencart.testcases.ApplicationTest.addProductToCart(ApplicationTest.java:123)
+	at opencart.testcases.ApplicationTest.addProductToCart(ApplicationTest.java:121)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -47,14 +47,14 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">opencart.testcases.ApplicationTest#addProductToCart</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Qty field is mandatory] but found [Success: You have added HP LP3065 to your shopping cart!]
+<h3 id="m1">opencart.testcases.ApplicationTest#addProductToCart</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Abc</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Please enter numeric value in quantity field] but found [Success: You have added HP LP3065 to your shopping cart!]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:453)
 	at org.testng.Assert.assertEquals(Assert.java:463)
-	at opencart.testcases.ApplicationTest.addProductToCart(ApplicationTest.java:123)
+	at opencart.testcases.ApplicationTest.addProductToCart(ApplicationTest.java:121)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -81,14 +81,14 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">opencart.testcases.ApplicationTest#addProductToCart</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Abc</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Please enter numeric value in quantity field] but found [Success: You have added HP LP3065 to your shopping cart!]
+<h3 id="m2">opencart.testcases.ApplicationTest#addProductToCart</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>-45</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Qty must be Positive] but found [Success: You have added HP LP3065 to your shopping cart!]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:453)
 	at org.testng.Assert.assertEquals(Assert.java:463)
-	at opencart.testcases.ApplicationTest.addProductToCart(ApplicationTest.java:123)
+	at opencart.testcases.ApplicationTest.addProductToCart(ApplicationTest.java:121)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -115,12 +115,15 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">opencart.testcases.ApplicationTest#addProductToCart</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">opencart.testcases.ApplicationTest#browseProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">opencart.testcases.ApplicationTest#enterAddress</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>Vivek</td><td>Ingole</td><td>Hinjewadi Phase 3</td><td>Pune</td><td>413309</td><td>107</td><td>19</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">opencart.testcases.ApplicationTest#enterAddress</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">opencart.testcases.ApplicationTest#launchBrowserTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">opencart.testcases.ApplicationTest#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">opencart.testcases.ApplicationTest#proceedToCheckout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">opencart.testcases.ApplicationTest#acceptTerms</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">opencart.testcases.ApplicationTest#addProductToCart</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">opencart.testcases.ApplicationTest#browseProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">opencart.testcases.ApplicationTest#enterAddress</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>Vivek</td><td>Ingole</td><td>Hinjewadi Phase 3</td><td>Pune</td><td>413309</td><td>107</td><td>19</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">opencart.testcases.ApplicationTest#enterAddress</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">opencart.testcases.ApplicationTest#enterDeliveryDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">opencart.testcases.ApplicationTest#enterDeliveryMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">opencart.testcases.ApplicationTest#launchBrowserTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">opencart.testcases.ApplicationTest#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">opencart.testcases.ApplicationTest#proceedToCheckout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

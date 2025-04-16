@@ -51,8 +51,6 @@ public class ApplicationTest {
 		loginPage = new LoginPage(driver);
 		checkout = new CheckoutPage(driver);
 		extent.attachReporter(exreport);
-		
-
 	}
 
 	@BeforeMethod
@@ -75,7 +73,7 @@ public class ApplicationTest {
 		homePage.clickMyAccount();
 		homePage.clickLogin();
 
-		loginPage.setUsername("amal2002@gmail.com");
+		loginPage.setUsername("amal2000@gmail.com");
 		loginPage.setPassword("12345");
 		loginPage.clickLogin();
 
@@ -141,6 +139,10 @@ public class ApplicationTest {
 		//checkout.selectNewAddress();
 		Thread.sleep(2000);
 		logger.log(Status.INFO, "New Address selected");
+		
+		if(checkout.skipExistingAddress())
+			checkout.selectOptNewAddress();
+		
 		checkout.enterBillingDetails(first, last, addr1, city, pincode, country, state);
 		
 		logger.log(Status.INFO, "Address Data : " + first + " , " + last + " , " + addr1 + " , " + city + " , "+ pincode + " , " + country + " , " + state);
@@ -160,12 +162,33 @@ public class ApplicationTest {
 			
 			excelReader.setCellData(addresscount, excelReader.getColCount(), "Passed"); // Making Status Passed if add error message is verified.
 		} else {
-			excelReader.setCellData(addresscount, excelReader.getColCount(), "Passed");
+			excelReader.setCellData(addresscount, excelReader.getColCount(), "Failed");
 		}
 		Thread.sleep(3000);
 		addresscount++;
 	}
+	
+	@Test(priority = 6)
+	public void enterDeliveryDetails() throws InterruptedException {
+		checkout.enterDeliveryDetails();
+		logger.log(Status.INFO, "Delivery detailes entered");
+		Thread.sleep(3000);
+	}
+	
+	@Test(priority = 7)
+	public void enterDeliveryMethod() throws InterruptedException {
+		checkout.enterDeliveryMethod();
+		logger.log(Status.INFO, "Delivery method details entered");
+		Thread.sleep(3000);
+	}
+	
+	@Test(priority = 8)
+	public void acceptTerms() throws InterruptedException {
+		checkout.clickTermsAndCondition();
+		logger.log(Status.INFO, "Terms and Condition clicked");
+	}
 
+	
 	
 	@DataProvider
 	public Object[][] getAddressData(){

@@ -54,8 +54,16 @@ public class CheckoutPage {
 	@FindBy(id="button-confirm")
 	WebElement confirm;
 
+	@FindBy(xpath="//*[@id=\"collapse-payment-address\"]/div/form/div[1]/label/input")
+	WebElement existingAddress;
+	
+	@FindBy(xpath="//*[@id=\"collapse-payment-address\"]/div/form/div[3]/label/input")
+	WebElement selectOptNewAddress;
+	
 	@FindBy(xpath="//*[@id=\"collapse-payment-method\"]/div/div[3]/div/input[1]")
 	WebElement termscheckbox;
+	
+	
 	
 	/*************Error Message*******************/
 	
@@ -85,16 +93,16 @@ public class CheckoutPage {
 	
 	public void enterBillingDetails(String first,String last,String address1,String city,String postcode, String country,String state) {
 		try {
-			int countryidx,stateidx;
+			int countryidx, stateidx;
 			try{
-				countryidx = Integer.parseInt(country);
-				stateidx = Integer.parseInt(state);
+				 countryidx = Integer.parseInt(country);
+				 stateidx = Integer.parseInt(state);
 			}catch(NumberFormatException e){
 				countryidx = 0;
 				stateidx = 0;
 			}
-			firstname.sendKeys(first);
-			lastname.sendKeys(last);
+			this.firstname.sendKeys(first);
+			this.lastname.sendKeys(last);
 			this.address1.sendKeys(address1);
 			this.city.sendKeys(city);
 			this.postcode.sendKeys(postcode);
@@ -140,15 +148,25 @@ public class CheckoutPage {
 		step4continue.click();		
 	}
 	public void clickTermsAndCondition() throws InterruptedException{		
-		driver.findElement(By.cssSelector("#collapse-payment-method > div > div.buttons > div > input[type=checkbox]:nth-child(2)")).click();
+		driver.findElement(By.xpath("//div[@id='collapse-payment-method']/div/div[2]/div/input[1]")).click();
 		clickStep5Continue();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		confirmOrder();
 		Thread.sleep(3000);
 	}
+	
 	public void enterPaymentMethod() {
 		step5continue.click();		
 	}
+	
+	public boolean skipExistingAddress() {
+		return existingAddress.isSelected();
+	}
+	
+	public void selectOptNewAddress() {
+		selectOptNewAddress.click();
+	}
+	
 	/*********************************************************/
 
 	public String getFirstFieldError(){
