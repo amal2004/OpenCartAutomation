@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="7" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-10T20:55:02 EDT" name="Default suite" finished-at="2025-04-10T20:55:28 EDT" duration-ms="26159">
+  <suite started-at="2025-04-16T14:35:06Z" name="Default suite" finished-at="2025-04-16T14:35:57Z" duration-ms="50851">
     <groups>
     </groups>
-    <test started-at="2025-04-10T20:55:02 EDT" name="Default test" finished-at="2025-04-10T20:55:28 EDT" duration-ms="26159">
+    <test started-at="2025-04-16T14:35:06Z" name="Default test" finished-at="2025-04-16T14:35:57Z" duration-ms="50851">
       <class name="opencart.testcases.ApplicationTest">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:opencart.testcases.ApplicationTest@31190526]" started-at="2025-04-10T20:55:02 EDT" name="launchBrowser" finished-at="2025-04-10T20:55:09 EDT" duration-ms="7286" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:opencart.testcases.ApplicationTest@3aa078fd]" started-at="2025-04-16T14:35:06Z" name="launchBrowser" finished-at="2025-04-16T14:35:13Z" duration-ms="6194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:opencart.testcases.ApplicationTest@31190526]" started-at="2025-04-10T20:55:09 EDT" name="setUp" finished-at="2025-04-10T20:55:09 EDT" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:opencart.testcases.ApplicationTest@3aa078fd]" started-at="2025-04-16T14:35:13Z" name="setUp" finished-at="2025-04-16T14:35:13Z" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="launchBrowserTest()[pri:0, instance:opencart.testcases.ApplicationTest@31190526]" started-at="2025-04-10T20:55:09 EDT" name="launchBrowserTest" finished-at="2025-04-10T20:55:09 EDT" duration-ms="269" status="PASS">
+        <test-method signature="launchBrowserTest()[pri:0, instance:opencart.testcases.ApplicationTest@3aa078fd]" started-at="2025-04-16T14:35:13Z" name="launchBrowserTest" finished-at="2025-04-16T14:35:13Z" duration-ms="235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowserTest -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:opencart.testcases.ApplicationTest@31190526]" started-at="2025-04-10T20:55:09 EDT" name="setUp" finished-at="2025-04-10T20:55:09 EDT" duration-ms="1" status="PASS">
+        <test-method signature="login()[pri:1, instance:opencart.testcases.ApplicationTest@3aa078fd]" started-at="2025-04-16T14:35:13Z" name="login" finished-at="2025-04-16T14:35:15Z" duration-ms="1926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:opencart.testcases.ApplicationTest@3aa078fd]" started-at="2025-04-16T14:35:13Z" name="setUp" finished-at="2025-04-16T14:35:13Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,15 +41,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="login()[pri:1, instance:opencart.testcases.ApplicationTest@31190526]" started-at="2025-04-10T20:55:09 EDT" name="login" finished-at="2025-04-10T20:55:11 EDT" duration-ms="1814" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="browseProduct()[pri:2, instance:opencart.testcases.ApplicationTest@31190526]" started-at="2025-04-10T20:55:11 EDT" name="browseProduct" finished-at="2025-04-10T20:55:13 EDT" duration-ms="2042" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browseProduct -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:opencart.testcases.ApplicationTest@31190526]" started-at="2025-04-10T20:55:11 EDT" name="setUp" finished-at="2025-04-10T20:55:11 EDT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:opencart.testcases.ApplicationTest@3aa078fd]" started-at="2025-04-16T14:35:15Z" name="setUp" finished-at="2025-04-16T14:35:15Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,7 +52,63 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:opencart.testcases.ApplicationTest@31190526]" started-at="2025-04-10T20:55:14 EDT" name="setUp" finished-at="2025-04-10T20:55:14 EDT" duration-ms="1" status="PASS">
+        <test-method signature="browseProduct()[pri:2, instance:opencart.testcases.ApplicationTest@3aa078fd]" started-at="2025-04-16T14:35:15Z" name="browseProduct" finished-at="2025-04-16T14:35:17Z" duration-ms="2074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browseProduct -->
+        <test-method signature="addProductToCart(java.lang.String)[pri:3, instance:opencart.testcases.ApplicationTest@3aa078fd]" started-at="2025-04-16T14:35:18Z" name="addProductToCart" data-provider="getQty" finished-at="2025-04-16T14:35:22Z" duration-ms="3323" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Qty field is mandatory] but found [Success: You have added HP LP3065 to your shopping cart!]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Qty field is mandatory] but found [Success: You have added HP LP3065 to your shopping cart!]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at opencart.testcases.ApplicationTest.addProductToCart(ApplicationTest.java:123)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductToCart -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:opencart.testcases.ApplicationTest@3aa078fd]" started-at="2025-04-16T14:35:18Z" name="setUp" finished-at="2025-04-16T14:35:18Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -67,7 +119,144 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addProductToCart(java.lang.String)[pri:3, instance:opencart.testcases.ApplicationTest@31190526]" started-at="2025-04-10T20:55:14 EDT" name="addProductToCart" data-provider="getQty" finished-at="2025-04-10T20:55:18 EDT" duration-ms="3310" status="PASS">
+        <test-method signature="addProductToCart(java.lang.String)[pri:3, instance:opencart.testcases.ApplicationTest@3aa078fd]" started-at="2025-04-16T14:35:22Z" name="addProductToCart" data-provider="getQty" finished-at="2025-04-16T14:35:25Z" duration-ms="3243" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Abc]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Please enter numeric value in quantity field] but found [Success: You have added HP LP3065 to your shopping cart!]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Please enter numeric value in quantity field] but found [Success: You have added HP LP3065 to your shopping cart!]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at opencart.testcases.ApplicationTest.addProductToCart(ApplicationTest.java:123)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductToCart -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:opencart.testcases.ApplicationTest@3aa078fd]" started-at="2025-04-16T14:35:22Z" name="setUp" finished-at="2025-04-16T14:35:22Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void opencart.testcases.ApplicationTest.addProductToCart(java.lang.String) throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:opencart.testcases.ApplicationTest@3aa078fd]" started-at="2025-04-16T14:35:25Z" name="setUp" finished-at="2025-04-16T14:35:25Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void opencart.testcases.ApplicationTest.addProductToCart(java.lang.String) throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addProductToCart(java.lang.String)[pri:3, instance:opencart.testcases.ApplicationTest@3aa078fd]" started-at="2025-04-16T14:35:25Z" name="addProductToCart" data-provider="getQty" finished-at="2025-04-16T14:35:29Z" duration-ms="3552" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-45]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Qty must be Positive] but found [Success: You have added HP LP3065 to your shopping cart!]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Qty must be Positive] but found [Success: You have added HP LP3065 to your shopping cart!]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at opencart.testcases.ApplicationTest.addProductToCart(ApplicationTest.java:123)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductToCart -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:opencart.testcases.ApplicationTest@3aa078fd]" started-at="2025-04-16T14:35:29Z" name="setUp" finished-at="2025-04-16T14:35:29Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void opencart.testcases.ApplicationTest.addProductToCart(java.lang.String) throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addProductToCart(java.lang.String)[pri:3, instance:opencart.testcases.ApplicationTest@3aa078fd]" started-at="2025-04-16T14:35:29Z" name="addProductToCart" data-provider="getQty" finished-at="2025-04-16T14:35:32Z" duration-ms="3236" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -78,73 +267,126 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProductToCart -->
-        <test-method signature="addProductToCart(java.lang.String)[pri:3, instance:opencart.testcases.ApplicationTest@31190526]" started-at="2025-04-10T20:55:18 EDT" name="addProductToCart" data-provider="getQty" finished-at="2025-04-10T20:55:21 EDT" duration-ms="3308" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:opencart.testcases.ApplicationTest@3aa078fd]" started-at="2025-04-16T14:35:32Z" name="setUp" finished-at="2025-04-16T14:35:32Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[10]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addProductToCart -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:opencart.testcases.ApplicationTest@31190526]" started-at="2025-04-10T20:55:18 EDT" name="setUp" finished-at="2025-04-10T20:55:18 EDT" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void opencart.testcases.ApplicationTest.addProductToCart(java.lang.String) throws java.lang.InterruptedException,java.io.IOException]]>
+                <![CDATA[public void opencart.testcases.ApplicationTest.proceedToCheckout() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addProductToCart(java.lang.String)[pri:3, instance:opencart.testcases.ApplicationTest@31190526]" started-at="2025-04-10T20:55:21 EDT" name="addProductToCart" data-provider="getQty" finished-at="2025-04-10T20:55:24 EDT" duration-ms="3322" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="proceedToCheckout()[pri:4, instance:opencart.testcases.ApplicationTest@3aa078fd]" started-at="2025-04-16T14:35:32Z" name="proceedToCheckout" finished-at="2025-04-16T14:35:36Z" duration-ms="3971" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addProductToCart -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:opencart.testcases.ApplicationTest@31190526]" started-at="2025-04-10T20:55:21 EDT" name="setUp" finished-at="2025-04-10T20:55:21 EDT" duration-ms="0" status="PASS">
+        </test-method> <!-- proceedToCheckout -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:opencart.testcases.ApplicationTest@3aa078fd]" started-at="2025-04-16T14:35:36Z" name="setUp" finished-at="2025-04-16T14:35:36Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void opencart.testcases.ApplicationTest.addProductToCart(java.lang.String) throws java.lang.InterruptedException,java.io.IOException]]>
+                <![CDATA[public void opencart.testcases.ApplicationTest.enterAddress(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:opencart.testcases.ApplicationTest@31190526]" started-at="2025-04-10T20:55:24 EDT" name="setUp" finished-at="2025-04-10T20:55:24 EDT" duration-ms="1" status="PASS">
+        <test-method signature="enterAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:opencart.testcases.ApplicationTest@3aa078fd]" started-at="2025-04-16T14:35:36Z" name="enterAddress" data-provider="getAddressData" finished-at="2025-04-16T14:35:46Z" duration-ms="10099" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void opencart.testcases.ApplicationTest.addProductToCart(java.lang.String) throws java.lang.InterruptedException,java.io.IOException]]>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterAddress -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:opencart.testcases.ApplicationTest@3aa078fd]" started-at="2025-04-16T14:35:46Z" name="setUp" finished-at="2025-04-16T14:35:46Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void opencart.testcases.ApplicationTest.enterAddress(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addProductToCart(java.lang.String)[pri:3, instance:opencart.testcases.ApplicationTest@31190526]" started-at="2025-04-10T20:55:24 EDT" name="addProductToCart" data-provider="getQty" finished-at="2025-04-10T20:55:28 EDT" duration-ms="3327" status="PASS">
+        <test-method signature="enterAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:opencart.testcases.ApplicationTest@3aa078fd]" started-at="2025-04-16T14:35:46Z" name="enterAddress" data-provider="getAddressData" finished-at="2025-04-16T14:35:57Z" duration-ms="10967" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[14]]>
+                <![CDATA[Vivek]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ingole]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Hinjewadi Phase 3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Pune]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[413309]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[107]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[19]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addProductToCart -->
-        <test-method is-config="true" signature="closerBrowser()[pri:0, instance:opencart.testcases.ApplicationTest@31190526]" started-at="2025-04-10T20:55:28 EDT" name="closerBrowser" finished-at="2025-04-10T20:55:28 EDT" duration-ms="244" status="PASS">
+        </test-method> <!-- enterAddress -->
+        <test-method is-config="true" signature="closerBrowser()[pri:0, instance:opencart.testcases.ApplicationTest@3aa078fd]" started-at="2025-04-16T14:35:57Z" name="closerBrowser" finished-at="2025-04-16T14:35:57Z" duration-ms="392" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closerBrowser -->

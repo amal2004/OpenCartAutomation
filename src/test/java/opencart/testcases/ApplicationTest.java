@@ -22,6 +22,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 import opencart.launch.LoadDriver;
+import opencart.page.CheckoutPage;
 import opencart.page.HomePage;
 import opencart.page.LoginPage;
 import opencart.utilities.ExcelReader;
@@ -31,21 +32,24 @@ public class ApplicationTest {
 	static WebDriver driver;
 	static LoginPage loginPage;
 	static HomePage homePage;
+	static CheckoutPage checkout;
 	static ExtentHtmlReporter exreport = new ExtentHtmlReporter("./report/Report.html");
 	static ExtentReports extent = new ExtentReports();
 	static ExtentTest logger;
 	private ExcelReader excelReader;
 	private ExcelReader excelQtyReader;
 	int qtycount=1;
+	int addresscount=1;
 
 	@BeforeClass
 	public static void launchBrowser() {
 		driver = LoadDriver.loadDriver("chrome");
-		driver.get("https://naveenautomationlabs.com/opencart/");
+		driver.get("https://naveenautomationlabs.com/opencart");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
 		homePage = new HomePage(driver);
 		loginPage = new LoginPage(driver);
+		checkout = new CheckoutPage(driver);
 		extent.attachReporter(exreport);
 		
 
@@ -71,7 +75,7 @@ public class ApplicationTest {
 		homePage.clickMyAccount();
 		homePage.clickLogin();
 
-		loginPage.setUsername("amal2000@gmail.com");
+		loginPage.setUsername("amal2002@gmail.com");
 		loginPage.setPassword("12345");
 		loginPage.clickLogin();
 
@@ -104,7 +108,8 @@ public class ApplicationTest {
 
 		homePage.enterQty(qty);
 		homePage.addProductToCart();		
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(8));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='product-product']/div[1]")));
 		
 		String actualMessage = homePage.getCartAddMessageAlert();
@@ -121,17 +126,68 @@ public class ApplicationTest {
 		
 	}
 	
+	@Test(priority = 4)
+	public void proceedToCheckout() throws InterruptedException {
+		homePage.viewCart();
+		logger.log(Status.INFO, "Cart Displayed");
+		
+		homePage.proceedToCheckout();
+		Thread.sleep(3000);
+		logger.log(Status.INFO, "Proceed to checkout");
+	}
+	
+	@Test(priority=5, dataProvider="getAddressData")
+	public void enterAddress(String first,String last,String addr1,String city,String pincode,String country,String state) throws InterruptedException{		
+		//checkout.selectNewAddress();
+		Thread.sleep(2000);
+		logger.log(Status.INFO, "New Address selected");
+		checkout.enterBillingDetails(first, last, addr1, city, pincode, country, state);
+		
+		logger.log(Status.INFO, "Address Data : " + first + " , " + last + " , " + addr1 + " , " + city + " , "+ pincode + " , " + country + " , " + state);
+		if (first.equals("") && last.equals("") && addr1.equals("") && city.equals("")) {
+			
+			Assert.assertEquals(checkout.getFirstFieldError(), "First Name must be between 1 and 32 characters!","Error Message Not Displayed!!");
+			logger.log(Status.PASS, "Error message of first name field is verified");
+			
+			Assert.assertEquals(checkout.getLastFieldError(), "Last Name must be between 1 and 32 characters!","Error Message Not Displayed!!");
+			logger.log(Status.PASS, "Error message of first name field is verified");
+			
+			Assert.assertEquals(checkout.getAddr1FieldError(), "Address 1 must be between 3 and 128 characters!","Error Message Not Displayed!!");
+			logger.log(Status.PASS, "Error message of first name field is verified");
+			
+			Assert.assertEquals(checkout.getCityFieldError(), "City must be between 2 and 128 characters!","Error Message Not Displayed!!");
+			logger.log(Status.PASS, "Error message of first name field is verified");
+			
+			excelReader.setCellData(addresscount, excelReader.getColCount(), "Passed"); // Making Status Passed if add error message is verified.
+		} else {
+			excelReader.setCellData(addresscount, excelReader.getColCount(), "Passed");
+		}
+		Thread.sleep(3000);
+		addresscount++;
+	}
+
+	
+	@DataProvider
+	public Object[][] getAddressData(){
+		String projectpath = System.getProperty("user.dir");
+		String filepath = projectpath + "/testdata/";
+		String filename = "TestData.xlsx";
+		String sheetname = "Address";		
+		excelReader = new ExcelReader(filepath+filename, sheetname,1);
+		Object data[][]  = excelReader.getAllData();
+		return data;
+	}
+
 	@DataProvider
 	public Object[][] getQty(){
 		String projectpath = System.getProperty("user.dir");
 		String filepath = projectpath + "/testdata/";
-		String filename = "Book2.xlsx";
+		String filename = "TestData.xlsx";
 		String sheetname = "Qty";		
 		excelQtyReader = new ExcelReader(filepath+filename, sheetname,2);
 		Object data[][]  = excelQtyReader.getAllData();
 		return data;
 	}
-	
 
 	@AfterClass
 	public void closerBrowser() {

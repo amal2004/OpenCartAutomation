@@ -11,8 +11,8 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class ExcelReader {
-	
+public class ExcelReader 
+{
 	public  FileInputStream fis;
 	public  Workbook wb;
 	public  Sheet sheet;
@@ -135,14 +135,14 @@ public class ExcelReader {
 			return null;
 		}
 	}
+	public static void main(String aep[]){
+		String projectpath = System.getProperty("user.dir");
+		String filepath = projectpath + "/testdata/";
+		String filename = "TestData.xlsx";
+		String sheetname = "Address";		
+		ExcelReader reader = new ExcelReader(filepath+filename, sheetname,1);
+		reader.getAllData();
+	}
 	
-	/*
-	 * public static void main(String aep[]){ String projectpath =
-	 * System.getProperty("user.dir"); String filepath = projectpath + "/testdata/";
-	 * String filename = "TestData.xlsx"; String sheetname = "Address"; ExcelReader
-	 * reader = new ExcelReader(filepath+filename, sheetname,1);
-	 * reader.getAllData(); }
-	 */
 	
-
 }

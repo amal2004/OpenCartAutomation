@@ -34,6 +34,13 @@ public class HomePage {
 	WebElement addProductToCart;
 	
 	
+	@FindBy(xpath="//div[@id='top-links']/ul/li[4]")
+	WebElement viewCart;
+	
+	@FindBy(xpath="//div[@id='content']/div[3]/div[2]/a")
+	WebElement checkOut;
+	
+	
 	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		this.driver=driver;
@@ -78,7 +85,14 @@ public class HomePage {
 		return message;
 	}
 	
+	public void viewCart() {
+		viewCart.click();
+	}
 	
-	//*[@id=\"product-product\"]/div[1]"
-	//error = error.substring(0, error.length()-2)
+	public void proceedToCheckout() {
+		checkOut.click();
+	}
+	
+	
+	
 }
