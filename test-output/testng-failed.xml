@@ -7,6 +7,7 @@
         <methods>
           <include name="closerBrowser"/>
           <include name="launchBrowser"/>
+          <include name="checkStatus"/>
           <include name="setUp"/>
           <include name="addProductToCart" invocation-numbers="0 1 2"/>
         </methods>

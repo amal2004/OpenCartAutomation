@@ -9,18 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">10</td><td class="num">0</td><td class="num attn">3</td><td class="num">66,495</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">10</td><td class="num">0</td><td class="num attn">3</td><td class="num">66,833</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">opencart.testcases.ApplicationTest</td><td><a href="#m0">addProductToCart</a></td><td rowspan="3">1744824131951</td><td rowspan="3">3915</td></tr><tr class="failedeven"><td><a href="#m1">addProductToCart</a></td></tr><tr class="failedeven"><td><a href="#m2">addProductToCart</a></td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="10">opencart.testcases.ApplicationTest</td><td><a href="#m3">acceptTerms</a></td><td rowspan="1">1744824177858</td><td rowspan="1">5237</td></tr><tr class="passedeven"><td><a href="#m4">addProductToCart</a></td><td rowspan="1">1744824142570</td><td rowspan="1">3462</td></tr><tr class="passedeven"><td><a href="#m5">browseProduct</a></td><td rowspan="1">1744824127699</td><td rowspan="1">2614</td></tr><tr class="passedeven"><td><a href="#m6">enterAddress</a></td><td rowspan="2">1744824160530</td><td rowspan="2">11089</td></tr><tr class="passedeven"><td><a href="#m7">enterAddress</a></td></tr><tr class="passedeven"><td><a href="#m8">enterDeliveryDetails</a></td><td rowspan="1">1744824171620</td><td rowspan="1">3147</td></tr><tr class="passedeven"><td><a href="#m9">enterDeliveryMethod</a></td><td rowspan="1">1744824174768</td><td rowspan="1">3089</td></tr><tr class="passedeven"><td><a href="#m10">launchBrowserTest</a></td><td rowspan="1">1744824124873</td><td rowspan="1">429</td></tr><tr class="passedeven"><td><a href="#m11">login</a></td><td rowspan="1">1744824125308</td><td rowspan="1">2389</td></tr><tr class="passedeven"><td><a href="#m12">proceedToCheckout</a></td><td rowspan="1">1744824146033</td><td rowspan="1">4005</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">opencart.testcases.ApplicationTest</td><td><a href="#m0">addProductToCart</a></td><td rowspan="3">1744830158133</td><td rowspan="3">3252</td></tr><tr class="failedeven"><td><a href="#m1">addProductToCart</a></td></tr><tr class="failedeven"><td><a href="#m2">addProductToCart</a></td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="10">opencart.testcases.ApplicationTest</td><td><a href="#m3">acceptTerms</a></td><td rowspan="1">1744830197157</td><td rowspan="1">5233</td></tr><tr class="passedeven"><td><a href="#m4">addProductToCart</a></td><td rowspan="1">1744830161608</td><td rowspan="1">3315</td></tr><tr class="passedeven"><td><a href="#m5">browseProduct</a></td><td rowspan="1">1744830146559</td><td rowspan="1">1908</td></tr><tr class="passedeven"><td><a href="#m6">enterAddress</a></td><td rowspan="2">1744830179623</td><td rowspan="2">11172</td></tr><tr class="passedeven"><td><a href="#m7">enterAddress</a></td></tr><tr class="passedeven"><td><a href="#m8">enterDeliveryDetails</a></td><td rowspan="1">1744830190850</td><td rowspan="1">3160</td></tr><tr class="passedeven"><td><a href="#m9">enterDeliveryMethod</a></td><td rowspan="1">1744830194045</td><td rowspan="1">3067</td></tr><tr class="passedeven"><td><a href="#m10">launchBrowserTest</a></td><td rowspan="1">1744830142907</td><td rowspan="1">739</td></tr><tr class="passedeven"><td><a href="#m11">login</a></td><td rowspan="1">1744830143779</td><td rowspan="1">2625</td></tr><tr class="passedeven"><td><a href="#m12">proceedToCheckout</a></td><td rowspan="1">1744830164962</td><td rowspan="1">4027</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">opencart.testcases.ApplicationTest#addProductToCart</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Qty field is mandatory] but found [Success: You have added HP LP3065 to your shopping cart!]
+<h2>Default test</h2><h3 id="m0">opencart.testcases.ApplicationTest#addProductToCart</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>-45</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Qty must be Positive] but found [Success: You have added HP LP3065 to your shopping cart!]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:453)
 	at org.testng.Assert.assertEquals(Assert.java:463)
-	at opencart.testcases.ApplicationTest.addProductToCart(ApplicationTest.java:121)
+	at opencart.testcases.ApplicationTest.addProductToCart(ApplicationTest.java:139)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -47,14 +47,31 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">opencart.testcases.ApplicationTest#addProductToCart</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Abc</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Please enter numeric value in quantity field] but found [Success: You have added HP LP3065 to your shopping cart!]
+<h3 id="m1">opencart.testcases.ApplicationTest#addProductToCart</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Abc</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Please enter numeric value in quantity field] but found [Description
+Specification
+Reviews (0)
+Stop your co-workers in their tracks with the stunning new 30-inch diagonal HP LP3065 Flat Panel Monitor. This flagship monitor features best-in-class performance and presentation features on a huge wide-aspect screen while letting you work as comfortably as possible - you might even forget you&apos;re at the office
+HP LP3065
+Brand: Hewlett-Packard
+Product Code: Product 21
+Reward Points: 300
+Availability: In Stock
+$100.00
+Ex Tax: $100.00
+Price in reward points: 400
+Available Options
+Delivery Date
+Qty
+
+Add to Cart
+0 reviews / Write a revi]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:453)
 	at org.testng.Assert.assertEquals(Assert.java:463)
-	at opencart.testcases.ApplicationTest.addProductToCart(ApplicationTest.java:121)
+	at opencart.testcases.ApplicationTest.addProductToCart(ApplicationTest.java:139)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -81,14 +98,14 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">opencart.testcases.ApplicationTest#addProductToCart</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>-45</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Qty must be Positive] but found [Success: You have added HP LP3065 to your shopping cart!]
+<h3 id="m2">opencart.testcases.ApplicationTest#addProductToCart</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Qty field is mandatory] but found [Success: You have added HP LP3065 to your shopping cart!]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:453)
 	at org.testng.Assert.assertEquals(Assert.java:463)
-	at opencart.testcases.ApplicationTest.addProductToCart(ApplicationTest.java:121)
+	at opencart.testcases.ApplicationTest.addProductToCart(ApplicationTest.java:139)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

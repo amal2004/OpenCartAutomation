@@ -10,7 +10,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -18,6 +20,8 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.MediaEntityModelProvider;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
@@ -25,6 +29,7 @@ import opencart.launch.LoadDriver;
 import opencart.page.CheckoutPage;
 import opencart.page.HomePage;
 import opencart.page.LoginPage;
+import opencart.utilities.Capture;
 import opencart.utilities.ExcelReader;
 
 public class ApplicationTest {
@@ -56,6 +61,19 @@ public class ApplicationTest {
 	@BeforeMethod
 	public void setUp(Method method) {
 		logger = extent.createTest(method.getName());
+	}
+	
+	@AfterMethod
+	public void checkStatus(ITestResult result) {
+		if(result.getStatus()==ITestResult.FAILURE) {
+			String path = Capture.captureScreenShot(driver);
+			try {
+				logger.fail(result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(path).build());
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		extent.flush();
 	}
 
 	@Test(priority = 0)
